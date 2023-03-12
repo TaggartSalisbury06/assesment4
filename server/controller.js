@@ -27,6 +27,17 @@ module.exports = {
         console.log('Registering User')
         console.log(req.body)
         res.status(200).send(req.body)
+    },
+
+    catPic: (req, res) => {
+        let catArr = new Array (
+            "http://placekitten.com/400/400",
+            "http://placekitten.com/500/800",
+            "http://placekitten.com/600/500",
+            "http://placekitten.com/200/300"
+        )
+        i = Math.floor(Math.random()*catArr.length);
+        res.status(200).send(catArr[i])
     }
 
 }
