@@ -38,6 +38,14 @@ module.exports = {
         )
         i = Math.floor(Math.random()*catArr.length);
         res.status(200).send(catArr[i])
+    },
+
+    hello: (req, res) => {
+        let greetings = new Array (
+            "Bonjour", "Hola", "Здравствуйте", "您好", "Salve", "こんにちわ", "Guten Tag", "Olá", "안영하세요", "أسلم عليكم", "Goddag", "shikamoo", "Goedendag", "γιασσας", "Dzień dobry", "Selamat siang","Namaste, Namaskar", "Merhaba", "שׁלום"
+        )
+        i = Math.floor(Math.random()*greetings.length);
+        res.status(200).send(greetings[i])
     }
 
 }

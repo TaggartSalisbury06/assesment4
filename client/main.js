@@ -3,7 +3,7 @@ const fortuneBtn = document.getElementById("fortune-btn")
 const signUpForm = document.querySelector("form")
 const userContainer = document.getElementById("userMotiv")
 const getCatBtn = document.getElementById("catBut")
-let apiKey = "live_LiPKYg2HfxInCCnRTGZP1vVP9JrGrcW4gWgxRY72UWLx7X6AWPbHQLLVN8hq5IG4"
+const helloBtn = document.getElementById("hello-btn")
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")
         .then(res => {
@@ -28,6 +28,12 @@ const signUp = body => axios.post("http://localhost:4000/api/signUp", body).then
 const catPic = () => {
     axios.get("http://localhost:4000/api/cat").then(res => {
         getCatPic(res.data)
+    })
+}
+
+const hello = () => {
+    axios.get("http://localhost:4000/api/hello").then(res => {
+        alert(res.data)
     })
 }
 
@@ -83,3 +89,4 @@ complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
 signUpForm.addEventListener('submit', registerSubmitHandler)
 getCatBtn.addEventListener('click', catPic)
+helloBtn.addEventListener('click', hello)
