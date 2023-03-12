@@ -4,6 +4,7 @@ const signUpForm = document.querySelector("form")
 const userContainer = document.getElementById("userMotiv")
 const getCatBtn = document.getElementById("catBut")
 const helloBtn = document.getElementById("hello-btn")
+
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")
         .then(res => {

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
     <title>Back End Assessment</title>
   </head>
   <body class="container">
-    <button id="hello-btn">Hello</button>
-    <button id="complimentButton">Get a compliment</button>
-    <button id="fortune-btn">Get Fortune</button>
-
+    <div id="btn-cont">
+      <button id="hello-btn">Hello</button>
+      <button id="complimentButton">Get a compliment</button>
+      <button id="fortune-btn">Get Fortune</button>
+    </div>
     <form>
       First Name:
       <br>
@@ -21,8 +23,11 @@
     </form>
     <section id="userMotiv"></section>
 
-    <button id="catBut">Give Picture of Cat</button>
-    <img src="">
+    <div id="cat-cont">
+      <button id="catBut">Give Picture of Cat</button>
+      <img src="">
+    </div>
+    
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

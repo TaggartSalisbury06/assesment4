@@ -1,0 +1,38 @@
+#btn-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#hello-btn, #complimentButton, #fortune-btn {
+  padding: 15px;
+  font-size: 20px;
+  background-color: pink;
+  border: none;
+  border-radius: 10px;
+}
+
+form {
+  margin-top: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  text-align: center;
+  font-size: 30px;
+}
+
+#cat-cont {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#catBut {
+  margin: 50px;
+}
